@@ -139,7 +139,7 @@ function renderReference() {
 
   // Set credit text in the dedicated div
   const credit = document.getElementById('reference-credit');
-  credit.innerHTML = `Photo by <a href="${dailyImageUrl}" target="_blank">${dailyPhotographer}</a> `;
+  credit.innerHTML = `Photo by <a href="${dailyPhotoUrl}" target="_blank">${dailyPhotographer}</a> `;
 }
 
 function updatePuzzle() {
