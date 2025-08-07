@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Daily Pixel Slide</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Daily Pixel Slide</h1>
+        <div class="stats-container">
+            <div class="stat">
+                <div class="stat-title">Best</div>
+                <div class="stat-values">
+                    <div id="best-moves" class="stat-value">Moves: --</div>
+                    <div id="best-time" class="stat-value">Time: --</div>
+                </div>
+            </div>
+            <div class="stat">
+                <div class="stat-title">Last</div>
+                <div class="stat-values">
+                    <div id="last-moves" class="stat-value">Moves: --</div>
+                    <div id="last-time" class="stat-value">Time: --</div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+          <div id="puzzle"></div>
+          <div>
+            <div id="reference"></div>
+            <div id="reference-credit" class="reference-credit"></div>
+          </div>
+        </div>
+        <div class="stat">
+            <div class="stat-title">Current</div>
+            <div class="stat-values">
+                <div id="moves" class="stat-value">Moves: 0</div>
+                <div id="timer" class="stat-value">Time: 0.00s</div>
+            </div>
+        </div>
+        <!-- Place this where you want the button to appear -->
+        <button id="retry-btn">Retry</button>
+        <script src="script.js"></script>
+    </body>
+</html>
+
+<div id="result-popup" style="display:none;">
+  <div id="popup-content">
+    <h2 id="result-message"></h2>
+    <p id="share-summary"></p>
+    <button onclick="copyShareText()">Copy & Share</button>
+    <button onclick="shareToTwitter()">Share on X</button>
+    <button onclick="shareToWhatsApp()">Share on WhatsApp</button>
+    <button onclick="closePopup()">Close</button>
+  </div>
+</div>
